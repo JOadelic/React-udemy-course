@@ -6,7 +6,8 @@ function App() {
 
   let appObject = {
     title: "Practicing React",
-    subtitle: "Back to Basics"
+    subtitle: "Back to Basics",
+    options: ['Do something', ' Do nothing.']
   }
 
   let user = {
@@ -14,6 +15,12 @@ function App() {
     location: "Niagara Falls",
     favMovie: "Indiana Jones (Raiders Of The Lost Ark)",
     age: "33"
+  }
+
+  function renderSubtitle(title) {
+    if (title) {
+        return <p>{appObject.subtitle}</p>
+    }
   }
 
   function getLocation(location) {
@@ -25,7 +32,8 @@ function App() {
     <>
       <div>
         <p><b>{appObject.title}</b></p>
-        <p>{appObject.subtitle}</p>
+        {renderSubtitle(appObject.title)}
+        {appObject.options.length > 0 ? `These are your options: ${appObject.options}` : "no options available"}
       </div>
 
       <div>
