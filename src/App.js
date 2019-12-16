@@ -29,9 +29,9 @@ function App() {
       </div>
 
       <div>
-        <h1>{user.name}</h1>
+        <h1>{user.name ? user.name : "Annoymous"}</h1>
         <p>Favourite Movie: {user.favMovie}</p>
-        <p>Age: {user.age}</p>
+        <p>{user.age && user.age > 17 ? `Age: ${user.age}` : "Not Old Enough!"}</p>
         {getLocation(user.location)}
       </div>
     </>
