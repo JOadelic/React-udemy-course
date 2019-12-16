@@ -6,7 +6,7 @@ function App() {
 
   let appObject = {
     title: "Practicing React",
-    subtitle: "Back to Basics",
+    subtitle: "Back to Basics"
   }
 
   let user = {
