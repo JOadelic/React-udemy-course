@@ -11,9 +11,17 @@ function App() {
 
   let user = {
     name: "Jordan Owens",
-    location: "Niagara Falls",
+    // location: "Niagara Falls",
     favMovie: "Indiana Jones (Raiders Of The Lost Ark)",
     age: "33"
+  }
+
+  function getLocation(location) {
+    if (location) {
+      return location;
+    } else {
+      return 'Unknown';
+    }
   }
   return (
     <>
@@ -24,7 +32,7 @@ function App() {
 
       <div>
         <h1>{user.name}</h1>
-        <p>Location: {user.location}</p>
+        <p>Location: {getLocation(user.location)}</p>
         <p>Age: {user.age}</p>
         <p>Favourite Movie: {user.favMovie}</p>
       </div>
