@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 
-export default function Indecision() {
+export default function Indecision(props) {
   const [options, setOptions] = useState([]);
-
-  const app = {
-    title: "Indecision App",
-    subtitle: "Practicing React", 
-  };
 
   const formSubmit = (e) => {
     e.preventDefault();
@@ -30,9 +25,7 @@ export default function Indecision() {
 
   return (
     <div>
-      <h1>{app.title}</h1>
-      <h2>{app.subtitle}</h2>
-      <p>{app.subtitle && options.length > 0 ? `These are your options: ` : `There are no options`}</p>
+      <p>{options.length > 0 ? `Here are your options: ` : `Add a few options to help you make a decision`}</p>
       <ol>
         {options.map(option => (<li key={option}>{option}</li>))}
       </ol>
