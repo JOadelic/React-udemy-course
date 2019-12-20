@@ -1,21 +1,21 @@
 import React from 'react';
+import Nav from './components/Nav.js'
 import Counter from './components/Counter.js';
 import Indecision from './components/Indecision.js';
-import Toggle from './components/Toggle.js';
-import CssFun from './components/CssFun.js';
-
-import './App.css';
+import Title from './components/Title.js';
+import Gallery from './components/Gallery.js';
 
 export default function App() {
-  let title = 'React Playground';
+  let title = "Jordan's React Playground";
   let subtitle = 'Practicing React skills';
   
   return (
-  <div>
-    <Toggle title={title} subtitle={subtitle}/>
+  <div className="app">
+    <Nav />
+    <Title title={title} subtitle={subtitle}/>
     <Indecision />
     <Counter />
-    <CssFun />
+    <Gallery />
   </div>
   )
 }

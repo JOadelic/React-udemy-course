@@ -1,0 +1,44 @@
+.grid {
+  display: grid;
+  grid-template: 10rem 10rem 10rem / 20rem 20rem 20rem 1fr;
+  width: 100%;
+  // margin-left: 2rem;
+  
+  grid-template-areas: 
+    "E E A"
+    "B C A"
+    "F D A";
+}
+
+.grid div:nth-child(1) {
+   grid-area: A;
+   width: 100%; 
+   background-size: cover;
+   background-image: url('./yellowWall.jpg');
+  }
+  
+  .grid div:nth-child(2) {
+    grid-area: B;
+    background-size: cover;  
+    background-image: url('./greenLeaf.jpg');
+ }
+
+ .grid div:nth-child(3) {
+  grid-area: C;
+  background: lightcoral;
+}
+
+.grid div:nth-child(4) {
+  grid-area: D;
+  background: lightgreen;
+}
+
+.grid div:nth-child(5) {
+ grid-area: E;
+ background: lightpink;
+}
+
+.grid div:nth-child(6) {
+ grid-area: F;
+ background: lightseagreen;
+}

@@ -1,0 +1,38 @@
+.header {
+  background-image: url('./junglePark.jpg');
+  background-size: cover;
+  background-position: center;
+  // text-align: center;
+  height: 40rem;
+  width: 100%;
+  opacity: .8;
+  // padding: 3rem;
+  
+  h1 {
+    margin: 0px;
+    color: white;
+    padding: 1rem;
+    font-size: 6rem;
+  }
+  
+  h2 {
+    padding: 1rem;
+    color:white;
+    margin: 0px;
+    padding-top: 0px;
+    font-size: 3rem;
+  }
+  
+  .btn {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    background-color: bisque;
+  }
+}
+
+.info {
+  background-color: aliceblue;
+  width: 100%;
+  margin: 0px;
+}
