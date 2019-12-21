@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Indecision.scss';
 
 export default function Indecision(props) {
   const [options, setOptions] = useState([]);
@@ -24,7 +25,7 @@ export default function Indecision(props) {
   }
 
   return (
-    <div>
+    <div className='options-container'>
       <p>{options.length > 0 ? `Here are your options: ` : `Add a few options to help you make a decision`}</p>
       <ol>
         {options.map(option => (<li key={option}>{option}</li>))}
