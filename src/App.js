@@ -5,10 +5,11 @@ import Indecision from './components/Indecision.js';
 import Title from './components/Title.js';
 import Gallery from './components/Gallery.js';
 
+
 export default function App() {
   let title = "Jordan's React Playground";
   let subtitle = 'Practicing React skills';
-  
+
   return (
   <div className="app">
     <Nav />
