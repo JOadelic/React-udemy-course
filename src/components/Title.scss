@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+
 .header {
-  background-image: url('./junglePark.jpg');
+  background-image: url('./images/whitePattern.jpg');
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   // text-align: center;
+  // background-color: lightblue;
   height: 40rem;
   width: 100%;
   opacity: .8;
@@ -10,17 +14,20 @@
   
   h1 {
     margin: 0px;
-    color: white;
+    color: orangered;
     padding: 1rem;
     font-size: 6rem;
+    font-family: 'Special Elite', cursive;
   }
   
   h2 {
     padding: 1rem;
-    color:white;
+    color:rgb(237, 155, 56);
     margin: 0px;
     padding-top: 0px;
     font-size: 3rem;
+    font-family: 'Special Elite', cursive;
+
   }
   
   .btn {
