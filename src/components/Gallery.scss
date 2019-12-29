@@ -2,7 +2,7 @@
   display: grid;
   grid-template: 10rem 10rem 10rem / 20rem 20rem 20rem 1fr;
   width: 100%;
-  // margin-left: 2rem;
+  margin-left: 2rem;
   
   grid-template-areas: 
     "E E A"
@@ -14,31 +14,49 @@
    grid-area: A;
    width: 100%; 
    background-size: cover;
-   background-image: url('./yellowWall.jpg');
+   background-image: url('./pride game.jpg');
+   margin: 5px;
   }
   
   .grid div:nth-child(2) {
     grid-area: B;
     background-size: cover;  
     background-image: url('./greenLeaf.jpg');
+    margin: 5px;
+
  }
 
  .grid div:nth-child(3) {
   grid-area: C;
   background: lightcoral;
+  margin: 5px;
+  background-size: cover;  
+  background-image: url('./noteBook.jpeg');
 }
 
 .grid div:nth-child(4) {
   grid-area: D;
   background: lightgreen;
+  margin: 5px;
+  background-size: cover;  
+  background-image: url('./owens exy2.jpg');
+
 }
 
 .grid div:nth-child(5) {
  grid-area: E;
  background: lightpink;
+ margin: 5px;
+ background-size: cover;  
+ background-image: url('./wedding.JPG');
+ background-position: center;
 }
 
 .grid div:nth-child(6) {
  grid-area: F;
  background: lightseagreen;
+ margin: 5px;
+ background-size: cover;  
+ background-image: url('./kidsBooks.jpg');
+
 }
