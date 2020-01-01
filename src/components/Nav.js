@@ -4,9 +4,9 @@ import './Nav.scss';
 export default function Nav() {
   return (
     <div className="nav">
-        <div>resume</div>
         <div>about</div>
-        <div>login</div>
+        <div>resume</div>
+        {/* <div>login</div> */}
     </div>
   )
 }

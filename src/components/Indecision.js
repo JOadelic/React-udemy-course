@@ -5,16 +5,17 @@ export default function Indecision(props) {
   const [options, setOptions] = useState([]);
   const [input, setInput] = useState('');
 
-
-  const formSubmit = (event) => {
-    event.prventventDefault();
-
-    let option = event.target.elements.option.value;
+  
+  const formSubmit = (e) => {
+    e.preventDefault();
+    
+    let option = e.target.elements.option.value;
     
     if (option) {
       setOptions((prev) => [...prev, option])
-      event.target.elements.option.value = "";
+      e.target.elements.option.value = "";
     }
+    console.log(options)
   }
 
   const clearOptions = () => {
@@ -32,13 +33,17 @@ export default function Indecision(props) {
 
   return (
     <div className='options-container'>
-      <p>{options.length > 0 ? `Here are your options: ` : `Add a few options to help you make a decision`}</p>
+      <div>
+        The monkey bars were always my favourite thing to play on at the park.
+        What about you? What things would your dream park include?
+      </div>
+      <p>{options.length > 0 ? `Your dream park would include: ` : `Add items to your dream park here`}</p>
       <ol>
         {options.map(option => (<li key={option}>{option}</li>))}
       </ol>
       <form onSubmit={formSubmit}>
         <input type='text' name='option' value={input} onChange={handleInputChange}/>
-        <button>Add option</button>
+        <button>Add Item</button>
         {!input ? <h3>Input Required</h3> : <h3>Valid Input</h3>}
       </form>
       <button disabled={options.length < 1 ? true : false} onClick={choose}>Select Random Option</button>
