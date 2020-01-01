@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ControlledInput.scss'
 
 export default function ControlledInput() {
   const [input, setInput] = useState('');
@@ -8,7 +9,7 @@ export default function ControlledInput() {
   }
   
   return (
-    <div>
+    <div className="container">
       <h1>Controlled Input</h1>
       {!input ? <h3>Input Required</h3> : <h3>Valid Input</h3>}
       <input value={input} type='text' onChange={handleInputChange} />

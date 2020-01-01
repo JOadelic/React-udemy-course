@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -6,5 +9,15 @@
   // position: fixed;
   background-color: white;
   z-index: 1;
+  padding: 7px;
 
+  div {
+    margin: 2rem;
+    font-size: 2rem;
+    font-family: 'Special Elite', cursive;
+  }
 }
+
+
+  
+  

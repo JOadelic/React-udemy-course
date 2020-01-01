@@ -9,20 +9,23 @@
   // background-color: lightblue;
   height: 40rem;
   width: 100%;
-  opacity: .8;
-  // display: flex;
-  
+  // opacity: .8;
+  display: flex;
+  flex-direction: column;
+
   h1 {
     margin: 0px;
     color: orangered;
     padding: 1rem;
     font-size: 6rem;
     font-family: 'Special Elite', cursive;
+    outline: 1px white;
   }
   
   h2 {
     padding: 1rem;
     color:rgb(237, 155, 56);
+    color:black;
     margin: 0px;
     padding-top: 0px;
     font-size: 3rem;
@@ -36,7 +39,7 @@
     margin-left: 1.5rem;
     background-color: bisque;
     border-radius: 4px;
-    // height: 100%;
+    max-height: 2.5rem;
   }
 }
 
@@ -45,4 +48,16 @@
   width:50%;
   height: 50%;
   margin: 1.5rem;
+}
+
+.titleBtnImageContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titleImage {
+ max-height: 35rem;
+ max-width: 35rem;
+ justify-content: right;
+ margin-right: 22%;
 }

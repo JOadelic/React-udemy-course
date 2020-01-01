@@ -9,13 +9,13 @@ import ControlledInput from './components/ControlledInput.js';
 
 export default function App() {
   let title = "Jordan's React Playground";
-  let subtitle = 'Practicing React skills';
+  let subtitle = 'Crafting React skills';
 
   return (
   <div className="app">
     <Nav />
     <Title title={title} subtitle={subtitle}/>
-    <ControlledInput />
+    {/* <ControlledInput /> */}
     <Indecision />
     <Counter />
     {/* <Gallery /> */}
