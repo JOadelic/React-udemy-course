@@ -1,0 +1,12 @@
+.modal {
+  display: flex;
+  height: 20rem;
+  width: 40rem;
+  background-color: pink;
+
+  button {
+    height: 2rem;
+    width: 3rem;
+    justify-content: flex-end;
+  }
+}
