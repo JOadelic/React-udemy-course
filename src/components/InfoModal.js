@@ -11,7 +11,14 @@ export default function InfoModal(props) {
 
 
   return (
-    <Modal ariaHideApp={false} className="modal" isOpen={modalStatus} contentLabel="description of the app">
+    <Modal
+     ariaHideApp={false}
+     className="modal" 
+     isOpen={modalStatus} 
+     contentLabel="description of the app"
+     onRequestClose={()=> setModalStatus(false)}
+     closeTimeoutMS={4000}
+     >
       <button
        onClick={() => {
          setModalStatus(false)
@@ -20,8 +27,7 @@ export default function InfoModal(props) {
       >
       close
       </button>
-      <h3>test</h3>
-      <ReactPlayer url="./random.MOV" playing controls height='400'/>
+      <ReactPlayer url="https://youtube.com/watch?v=F3Re_ysIlRw&t=7s" playing controls height='100%' width='100%'/>
     </Modal>
   )
 }

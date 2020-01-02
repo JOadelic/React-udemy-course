@@ -5,6 +5,7 @@ import Indecision from './components/Indecision.js';
 import Title from './components/Title.js';
 // import Gallery from './components/Gallery.js';
 import ControlledInput from './components/ControlledInput.js';
+import './App.scss';
 
 
 export default function App() {
