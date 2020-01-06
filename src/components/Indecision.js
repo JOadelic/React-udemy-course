@@ -13,8 +13,8 @@ export default function Indecision(props) {
     
     if (option) {
       setOptions((prev) => [...prev, option])
-      e.target.elements.option.value = "";
     }
+    e.target.value = ""
     console.log(options)
   }
 
@@ -33,21 +33,19 @@ export default function Indecision(props) {
 
   return (
     <div className='options-container'>
-      <div>
-        The monkey bars were always my favourite thing to play on at the park.
-        What about you? What things would your dream park include?
+      <div className="indecisionDiv">
+        <p className="question">{options.length > 0 ? `Your dream park would include: ` : `Add items to your dream park here:`}</p>
+        <form onSubmit={formSubmit}>
+          <input className="formInput" type='text' name='option' value={input} onChange={handleInputChange}/>
+          <button className="btn">Add Item</button>
+          {!input ? "" : <div className='valid'>Valid Input</div>}
+        </form>
+        <ol>
+          {options.map(option => (<li key={option}>{option}</li>))}
+        </ol>
+        {/* <button className="btn" disabled={options.length < 1 ? true : false} onClick={choose}>Select Random Option</button> */}
+        <button className="btn" onClick={clearOptions}>Clear list</button>
       </div>
-      <p>{options.length > 0 ? `Your dream park would include: ` : `Add items to your dream park here`}</p>
-      <ol>
-        {options.map(option => (<li key={option}>{option}</li>))}
-      </ol>
-      <form onSubmit={formSubmit}>
-        <input type='text' name='option' value={input} onChange={handleInputChange}/>
-        <button>Add Item</button>
-        {!input ? <h3>Input Required</h3> : <h3>Valid Input</h3>}
-      </form>
-      <button disabled={options.length < 1 ? true : false} onClick={choose}>Select Random Option</button>
-      <button onClick={clearOptions}>Clear</button>
     </div>
   )
 }

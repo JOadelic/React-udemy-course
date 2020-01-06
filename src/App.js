@@ -10,7 +10,7 @@ import './App.scss';
 
 export default function App() {
   let title = "Jordan's React Playground";
-  let subtitle = 'Crafting React skills';
+  let subtitle = 'A React App';
 
   return (
   <div className="app">
