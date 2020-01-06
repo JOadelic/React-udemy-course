@@ -12,6 +12,8 @@
   // opacity: .8;
   display: flex;
   flex-direction: column;
+  margin: 2rem;
+  padding: 2rem;
 
   h1 {
     margin: 0px;
@@ -20,6 +22,7 @@
     font-size: 6rem;
     font-family: 'Special Elite', cursive;
     outline: 1px white;
+    // text-align: center;
   }
   
   h2 {
@@ -30,6 +33,7 @@
     padding-top: 0px;
     font-size: 3rem;
     font-family: 'Special Elite', cursive;
+    // text-align: center;
 
   }
   
@@ -37,9 +41,24 @@
     font-size: 2rem;
     margin-bottom: 1rem;
     margin-left: 1.5rem;
-    background-color: bisque;
+    background-color: rgb(94, 198, 233);
     border-radius: 4px;
     max-height: 2.5rem;
+    color: white;
+    font-family: 'Special Elite', cursive;
+    padding: .5rem;
+  }
+
+  .btn:hover {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-left: 1.5rem;
+    background-color: rgb(255, 166, 0);
+    border-radius: 4px;
+    max-height: 2.5rem;
+    color: white;
+    font-family: 'Special Elite', cursive;
+    padding: .5rem;
   }
 }
 
@@ -52,12 +71,12 @@
 
 .titleBtnImageContainer {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
 .titleImage {
- height: 25rem;
- max-width: 35rem;
- justify-content: right;
- margin-right: 22%;
+ height: 40rem;
+//  justify-content: right;
+ margin-right: 10rem;
 }

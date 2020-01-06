@@ -21,13 +21,15 @@ export default function Title(props) {
         <h2>{props.subtitle}</h2>
       </div>
       <div className="titleBtnImageContainer">
-        <button onClick={appInfo} className="btn">click me!</button>
+        <button onClick={appInfo} className="btn">introduction</button>
            {/* {visible ? <div className='info'>This app is a showcase of my skills in React. It is comprised
                          of some simple components that manipulate state/data and I also
                          have some fun with styling and design.</div> : ""} */}
             {visible ? <InfoModal appInfo={appInfo}/> : ""}
             {/* {visible ? <button onClick={}} */}
-          <img className="titleImage" src={ require('./images/blueSlide.jpg') } /> 
+          <div>
+            <img  className="titleImage" src={ require('./images/blueSlide.jpg') } />
+          </div>
       </div>
       {/* <InfoModal /> */}
     </div>

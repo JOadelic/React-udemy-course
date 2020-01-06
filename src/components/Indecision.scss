@@ -1,8 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+
+
 .options-container {
   // background-color: peachpuff;
   height: 20rem;
-  width: 100%;
+  width: 50%;
   background-color: white;
+  margin: 2rem;
+  background-image: url('./images/colouredWall.jpg');
+  background-size: cover;
+  font-family: 'Special Elite', 'cursive';
+  color: white;
+  font-size: 2rem;
+  padding: .5rem;
+  opacity: .8;
 }
 
 p {
