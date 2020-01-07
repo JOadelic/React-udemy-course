@@ -6,7 +6,7 @@
   height: 20rem;
   width: 100%;
   background-color: white;
-  margin: 2rem;
+  // margin-top: rem;
   // background-image: url('./images/colouredWall.jpg');
   // background-size: cover;
   // font-family: 'Special Elite', 'cursive';
@@ -18,7 +18,7 @@
 
 .indecisionDiv {
   height: 25rem;
-  width: 50%;
+  width: 100%;
   background-image: url('./images/colouredWall.jpg');
   background-size: cover;
   font-family: 'Special Elite', 'cursive';
@@ -27,6 +27,7 @@
   padding: .5rem;
   opacity: .8;
   overflow: scroll;
+  margin-top: 30rem;
 }
 
 p {

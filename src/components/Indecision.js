@@ -33,8 +33,8 @@ export default function Indecision(props) {
 
   return (
     <div className='options-container'>
+      <p className="question">{options.length > 0 ? `Your dream park would include: ` : `Add items to your dream park here:`}</p>
       <div className="indecisionDiv">
-        <p className="question">{options.length > 0 ? `Your dream park would include: ` : `Add items to your dream park here:`}</p>
         <form onSubmit={formSubmit}>
           <input className="formInput" type='text' name='option' value={input} onChange={handleInputChange}/>
           <button className="btn">Add Item</button>
