@@ -22,10 +22,10 @@ export default function Indecision(props) {
     setOptions([])
   }
 
-  const choose = () => {
-    let chosenOption = Math.floor(Math.random() * options.length)
-    alert(`Select option ${chosenOption + 1}`)
-  }
+  // const choose = () => {
+  //   let chosenOption = Math.floor(Math.random() * options.length)
+  //   alert(`Select option ${chosenOption + 1}`)
+  // }
 
   const handleInputChange = (event) => {
     setInput(event.target.value)

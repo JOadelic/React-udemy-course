@@ -17,8 +17,8 @@ export default function App() {
     <Nav />
     <Title title={title} subtitle={subtitle}/>
     {/* <ControlledInput /> */}
-    <Indecision />
     <Counter />
+    <Indecision />
     {/* <Gallery /> */}
   </div>
   )
